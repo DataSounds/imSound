@@ -4,9 +4,8 @@
 import os
 import sys
 
-
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages, Command
 except ImportError:
     from distutils.core import setup
 
@@ -14,8 +13,15 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
+here = os.path.abspath(os.path.dirname(__file__))
 readme = open('README.md').read()
 history = open('HISTORY.md').read().replace('.. :changelog:', '')
+
+install_requires = [
+    'numpy'
+]
+
+
 
 setup(
     name='imSound',
@@ -25,13 +31,10 @@ setup(
     author='DataSounds',
     author_email='arnaldo@datasounds.org, luiz@datasounds.org',
     url='https://github.com/DataSounds/imSound',
-    packages=[
-        'src/imSound',
-    ],
-    package_dir={'imSound': 'imSound'},
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     include_package_data=True,
-    install_requires=[
-    ],
+    install_requires=install_requires,
     license="PSF",
     zip_safe=False,
     keywords='imSound',
