@@ -39,12 +39,12 @@ class ImageSound(object):
         Generate sounds from data to be used for each coordinate.
         x and y are the coordinates of any image point.
         '''
+        print x,y
+        print'\n'
         scale = build_scale('C', mode='major', octaves=1)
         notes = note_number(self.data, scale)
-        if self.data.shape[1] > self.data.shape[0]:
-            note = notes[y, x]
-        else:
-            note = notes[x, y]
+        note = notes[y,x]
+        print note, '\n'
 
         melody = parse(note_name(note, scale))
         midi_out = StringIO()
