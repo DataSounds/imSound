@@ -26,7 +26,7 @@ setup(
     author_email='arnaldo@datasounds.org, luiz@datasounds.org',
     url='https://github.com/DataSounds/imSound',
     packages=[
-        'imSound',
+        'src/imSound',
     ],
     package_dir={'imSound': 'imSound'},
     include_package_data=True,
