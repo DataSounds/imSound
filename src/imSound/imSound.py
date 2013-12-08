@@ -39,12 +39,9 @@ class ImageSound(object):
         Generate sounds from data to be used for each coordinate.
         x and y are the coordinates of any image point.
         '''
-        print x,y
-        print'\n'
         scale = build_scale('C', mode='major', octaves=1)
         notes = note_number(self.data, scale)
         note = notes[y,x]
-        print note, '\n'
 
         melody = parse(note_name(note, scale))
         midi_out = StringIO()
@@ -54,7 +51,7 @@ class ImageSound(object):
 
         music = pygame.mixer.Sound('Oc.midi')
         pygame.mixer.music.load('Oc.midi')
-        pygame.mixer.music.play()
+        pygame.mixer.music.play(5)
 
     def play_move(self):
         '''
@@ -72,7 +69,7 @@ class ImageSound(object):
         '''
         def on_move(event):
             x, y = event.xdata, event.ydata
-            print('x = %s & y = %s' % (x, y))
+            #print('x = %s & y = %s' % (x, y))
             self.play_music(x, y)
 
         # pygame.mixer.stop()
