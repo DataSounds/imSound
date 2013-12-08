@@ -8,7 +8,7 @@ import numpy as np
 from sebastian.lilypond.interp import parse
 import fluidsynth
 
-from OceanSound.sounds import build_scale, note_number, note_name
+from DataSounds.sounds import build_scale, note_number, note_name
 
 SF2 = os.environ.get('SOUNDFONT', "/usr/share/sounds/sf2/FluidR3_GS.sf2")
 
