@@ -4,7 +4,7 @@ Installation
 
 At the command line::
 
-    $ easy_install imSound
+/*    $ easy_install imSound*/
 
 Or, if you have virtualenvwrapper installed::
 
