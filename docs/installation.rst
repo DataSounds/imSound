@@ -1,10 +1,7 @@
 ============
 Installation
 ============
-..
-At the command line::
 
-..    $ easy_install imSound
 At the command line::
 
     $ git clone http://github.com/DataSounds/imSound.git
@@ -19,7 +16,7 @@ Or, if you have virtualenvwrapper installed::
     (imSound) $ cd imSound
     (imSound) $ python setup.py install
 
-If in doubts while using virtualenvwrapper_
-.. _virtualenvwrapper: http://virtualenvwrapper.readthedocs.org/en/latest/
+If in doubts while using `virtualenvwrapper
+<http://virtualenvwrapper.readthedocs.org/en/latest/>`_.
 
 
