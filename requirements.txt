@@ -1,0 +1,3 @@
+matplotlib
+pygame
+https://github.com/jtauber/sebastian/archive/master.zip
