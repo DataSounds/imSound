@@ -25,7 +25,8 @@ If in doubts while using `virtualenvwrapper
 
 Dependencies
 ************
-**pygame** is a necessary package to use imSound, as well **DataSounds**.
-Both of them can be installed using pip. If you use virtualenvwrapper this
-could be done inside environment.
+`pygame <pygame.org>`_ is a necessary package to use imSound, as well 
+`DataSounds. <datasouds.org>`_
+Both of them can be installed using **pip**. If you use virtualenvwrapper this
+could be done inside your virtual environment.
 
