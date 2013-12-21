@@ -20,7 +20,7 @@ Or, if you have virtualenvwrapper installed:
     (imSound) $ cd imSound
     (imSound) $ python setup.py install
 
-If in doubts while using `virtualenvwrapper
+If in doubts while using virtualenvwrapper take a look `here.
 <http://virtualenvwrapper.readthedocs.org/en/latest/>`_.
 
 Dependencies
