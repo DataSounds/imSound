@@ -51,7 +51,7 @@ class ImageSound(object):
 
         music = pygame.mixer.Sound('Oc.midi')
         pygame.mixer.music.load('Oc.midi')
-        pygame.mixer.music.play(5)
+        pygame.mixer.music.play()
 
     def play_move(self):
         '''
