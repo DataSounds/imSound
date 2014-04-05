@@ -35,7 +35,7 @@ setup(
     package_dir={'': 'src'},
     include_package_data=True,
     install_requires=install_requires,
-    license="PSF",
+    license="BSD License",
     zip_safe=False,
     keywords='imSound',
     classifiers=[
