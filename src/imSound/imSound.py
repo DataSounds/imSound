@@ -21,7 +21,7 @@ class ImageSound(object):
 
     Example:
     --------
-    import imSound
+    from ImSound import imSound
     import numpy as np
 
     data = np.arange(100).reshape(10,10)
@@ -60,7 +60,7 @@ class ImageSound(object):
 
         Example:
         --------
-        import imSound
+        from imSound import imSound
         import numpy as np
 
         data = np.arange(100).reshape(10,10)
